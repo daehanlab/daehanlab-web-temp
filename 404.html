@@ -33,7 +33,7 @@ body {
 #notfound {
   position: relative;
   height: 100vh;
-  background-image: url('https://makebot.kro.kr/makebot_main_img.png');
+  background-image: url('https://daehanlab.kro.kr/2.png');
   background-size: cover;
 }
 
@@ -235,13 +235,11 @@ body {
 			<div class="notfound-404">
 				<h1>4<span>0</span>4</h1>
 			</div>
-			<h2>the page you requested could not be found</h2>
-			<form class="notfound-search">
-				<input type="text" onkeyup="enterkey();" id="search_text_input" placeholder="Search...">
-				<button type="button" onclick="button_click();"><span></span></button><br><br>
-                                		
+			<h2>the page you requested could not be found 😥</h2>
+      <h4>If you think this is error, please contact us 🙏</h4>
 			</form>
-                                                <button type="button" class="button1" onclick="button1_click();">Go to main page</button>
+                                                <button type="button" class="button1" onclick="button1_click();">Go to homepage</button>
+                                                <button type="button" class="button1" onclick="button2_click();">Contact</button>
 		</div>
 	</div>
 <script>
@@ -258,7 +256,11 @@ function enterkey() {
 }
 
 function button1_click() {
-  location.href = "https://makebot.kro.kr";
+  location.href = "https://daehanlab.kro.kr";
+}
+
+function button2_click() {
+  location.href = "https://daehanlab.kro.kr/contact?type=page-error&url="+location.href;
 }
 
 </script>
